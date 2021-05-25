@@ -1,5 +1,5 @@
 # basic-concepts Vue
-## This project has basics examples of vue v.3
+> This project has basics examples of vue v.3
 
 ## Project setup
 ```
