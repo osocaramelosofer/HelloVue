@@ -18,6 +18,9 @@ export default {
         start: {
             type: Number,
             default: 5,
+            validate( value ){
+                return value => 0 
+            }
             // required: false
         }
     },
