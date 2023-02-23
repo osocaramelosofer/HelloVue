@@ -1,7 +1,8 @@
 <template>
+
   <h2>{{ customTitle }}</h2>
   <p>{{counter}} <sup>2</sup> = {{ calculateSquareNumber }}</p>
-
+  <p data-testid="counter">{{ counter }}</p>
   <div>
     <button class="push-button" @click="increaseCounter">+1</button>
     <button class="push-button" v-on:click="decreaseCounter">-1</button>
@@ -17,7 +18,7 @@ export default {
         title: String,
         start: {
             type: Number,
-            default: 5,
+            default: 100,
             validate( value ){
                 return value => 0 
             }
